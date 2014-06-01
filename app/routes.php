@@ -19,6 +19,7 @@ Route::get('/', function()
 Route::controller('/customers', 'CustomerController');
 Route::controller('/transactions', 'TransactionController');
 Route::controller('users', 'UsersController');
+Route::controller('password', 'RemindersController');
 
 Route::group(array('prefix' => 'api/v1', 'before' => 'auth.basic'), function()
 {

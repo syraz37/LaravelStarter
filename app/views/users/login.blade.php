@@ -3,6 +3,6 @@
  
     {{ Form::text('email', null, array('class'=>'input-block-level', 'placeholder'=>'Email Address')) }}
     {{ Form::password('password', array('class'=>'input-block-level', 'placeholder'=>'Password')) }}
- 
+ 	{{ HTML::link('password/remind', 'Forgot password?') }}
     {{ Form::submit('Login', array('class'=>'btn btn-large btn-primary btn-block'))}}
 {{ Form::close() }}

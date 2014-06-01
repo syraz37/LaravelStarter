@@ -57,7 +57,7 @@ return array(
 			'host'      => 'localhost',
 			'database'  => 'customer_management_tutorial',
 			'username'  => 'root',
-			'password'  => 'hcetm',
+			'password'  => $_ENV['DATABASE_PASSWORD'],
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
